@@ -13,9 +13,10 @@
 
 class Solution {
     public String convert(String s, int numRows) {
+        if (numRows == 1) return s;
         StringBuilder sb = new StringBuilder();
         int next = numRows * 2 - 2;
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < numRows; i++) {
             for (int j = 0; j + i < s.length(); j += next) {
                 sb.append(s.charAt(i + j));
                 if (i != 0 && i != numRows - 1 && j + next - i < s.length()) sb.append(s.charAt(j + next - i));
