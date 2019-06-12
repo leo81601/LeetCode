@@ -20,18 +20,18 @@ class Three_Sum {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 2; i++) {
             if (i == 0 || nums[i] != nums[i - 1]) {
-                int j = i + 1, k = nums.length - 1, target = -nums[i];
-                while (j < k) {
-                    if (nums[j] + nums[k] == target) {
-                        list.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                        j++;
-                        k--;
-                        while (j < k && nums[j] == nums[j - 1]) j++;
-                        while (j < k && nums[k] == nums[k + 1]) k--;
-                    }else if (nums[j] + nums[k] < target) {
-                        j++;
+                int left = i + 1, right = nums.length - 1, target = -nums[i];
+                while (left < right) {
+                    if (nums[left] + nums[right] == target) {
+                        list.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                        left++;
+                        right--;
+                        while (left < right && nums[left] == nums[left - 1]) left++;
+                        while (left < right && nums[right] == nums[right + 1]) right--;
+                    }else if (nums[left] + nums[right] < target) {
+                        left++;
                     }else {
-                        k--;
+                        right--;
                     }
                 }
             }
