@@ -1,7 +1,5 @@
 package Binary_Search;
 
-import com.sun.org.apache.regexp.internal.RE;
-
 /**
  * Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.
  *
