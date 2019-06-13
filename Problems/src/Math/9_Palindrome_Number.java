@@ -1,12 +1,17 @@
 package Math;
 
 /**
- Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
-
- Related Topics: Math
+ * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+ *
+ * Example:
+ *
+ * Input: 121
+ * Output: true
+ *
+ * Related Topics: Math
  */
 
-class Solution {
+class Palindrome_Number {
     public boolean isPalindrome(int x) {
         int palindrome = 0, initial = x;
         while (x > 0) {

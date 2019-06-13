@@ -10,6 +10,11 @@ package String;
  *
  * Write the code that will take a string and make this conversion given a number of rows.
  *
+ * Example:
+ *
+ * Input: s = "PAYPALISHIRING", numRows = 3
+ * Output: "PAHNAPLSIIGYIR"
+ *
  * Related Topics: String
  */
 

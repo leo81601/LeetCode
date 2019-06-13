@@ -5,6 +5,11 @@ package String;
  *
  * If there is no common prefix, return an empty string "".
  *
+ * Example:
+ *
+ * Input: ["flower","flow","flight"]
+ * Output: "fl"
+ *
  * Related Topics: String
  */
 
